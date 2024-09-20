@@ -129,3 +129,63 @@
 - hour
   - TIME
   - NULL
+
+
+# table: likes
+
+- id
+  - BIGINT
+  - PK
+  - AUTO_INCREMENT
+  - UNIQUE
+  - NOTNULL
+
+- post_id
+  - UNSIGNED
+  - BIGINT
+  - FOREIGN KEY
+
+- user_id
+  - UNSIGNED
+  - BIGINT
+  - FOREIGN KEY
+
+- date
+  - DATE
+  - NOTNULL
+
+- hour
+  - TIME
+  - NOTNULL
+
+
+# table: comments
+
+- id
+  - BIGINT
+  - PK
+  - AUTO_INCREMENT
+  - UNIQUE
+  - NOTNULL
+
+- contents
+  - VARCHAR(255)
+  - NOTNULL
+
+- post_id
+  - UNSIGNED
+  - BIGINT
+  - FOREIGN KEY
+
+- user_id
+  - UNSIGNED
+  - BIGINT
+  - FOREIGN KEY
+
+- date
+  - DATE
+  - NOTNULL
+
+- hour
+  - TIME
+  - NOTNULL
